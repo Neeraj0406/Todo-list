@@ -1,0 +1,94 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+}
+.main_container{
+    background-color:black;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+figure img{
+    height:100px;
+    width:120px;
+    /* text-align: center; */
+    position: relative;
+    left:25%;
+
+    
+    
+}
+
+.fig_caption{
+    color:white;
+    text-align: center;
+}
+.item_input{
+    margin-top:20px;
+    padding: 10px 20px;
+    width: 300px;
+    border-radius: 10px;
+}
+.input_btn{
+    position: relative;
+    left: -35px;
+    color:black !important;
+    cursor: pointer;
+}
+
+
+.each_item_container{
+    margin:15px 0px;
+    
+}
+.list_div{
+    width:320px;
+    display: flex;
+    align-items: center;
+}
+.each_item{
+    border:1px solid black;
+    border-radius: 10px;
+    padding: 5px  10px;
+    background-color: rgb(57, 187, 226);
+    transition: background-color 0.5s ease; 
+    margin: 5px 0px; 
+    display: inline-block;    
+    width: 100%;
+}
+.each_item:hover{
+    background-color:white;
+    
+}
+.fa-times , .fa-edit{
+    /* position: relative; */
+    /* left: 90%; */
+    /* margin-left:px; */
+    color:red;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+.fa-edit:hover , .fa-times:hover {
+    color: white;
+}
+.fa-edit{
+    color:rgb(6, 250, 6);
+    margin-left:10px;
+}
+.remove_btn{
+    margin:10px  auto;
+    padding:10px;
+    display: block;
+    background-color:blue;
+    color:white;
+    transition: background-color 0.5s ease;
+    border-radius: 10px;
+}
+.remove_btn:hover{
+    color:black;
+    background-color:white;
+}
+
