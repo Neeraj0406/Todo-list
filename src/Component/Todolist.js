@@ -56,7 +56,7 @@ var newList = []
     }
     
     const updateItems = (id) => {
-        console.log('hello')
+        
         let newEditItem = items.find((elem) =>{
             return id === elem.id;
         })
@@ -117,3 +117,6 @@ var newList = []
 }
 
 export default Todolist
+
+
+
