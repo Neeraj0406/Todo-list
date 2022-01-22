@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect } from "react";
 import todolistimage from "../images/todolist.png";
 import "./todolist.css";
@@ -63,6 +64,12 @@ const Todolist = () => {
     setIsEditItem(id);
   };
 
+  const onEnter = (event) => {
+    if (event.keyCode === 13) {
+      showList();
+    }
+  };
+
   //  add data to local storage
   useEffect(() => {
     localStorage.setItem("Items", JSON.stringify(items));
@@ -86,6 +93,7 @@ const Todolist = () => {
               className="item_input"
               placeholder="✍ Add items..."
               onChange={(e) => setInputData(e.target.value)}
+              onKeyDown={onEnter}
               value={inputData}
             />
             {updateToggle ? (
