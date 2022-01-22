@@ -45,7 +45,7 @@ const Todolist = () => {
   var newList = [];
   const deleteItems = (id) => {
     newList = items.filter((elem) => {
-      return elem.id != id;
+      return elem.id !== id;
     });
     setItems(newList);
   };
